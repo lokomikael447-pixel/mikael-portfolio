@@ -1,0 +1,73 @@
+/* 1. ESTILO GERAL E BODY */
+body {
+    background-color: #f0f2f5; 
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* 2. ESTILO DO CABEÇALHO E RODAPÉ */
+header, footer {
+    background-color: #2c3e50; /* Azul escuro/Marinho */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* 3. CENTRALIZAR CONTEÚDO PRINCIPAL */
+main {
+    /* Limita a largura e centraliza o bloco principal */
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* 4. ESTILO DAS CAIXAS DE SEÇÃO (Brancas) */
+.about-me, .interests {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Organiza a foto e o texto lado a lado (Flexbox) */
+.profile-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* 5. ESTILO DA IMAGEM (Placeholder da foto de perfil) */
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc; 
+    /* Forma de círculo */
+    border-radius: 50%;
+    flex-shrink: 0; 
+}
+
+/* 6. ESTILO DA LISTA */
+.interests ul {
+    /* Remove marcadores de lista padrão */
+    list-style: none;
+    padding: 0;
+}
+
+/* Adiciona o marcador de ponto customizado */
+.interests li::before {
+    content: "•";
+    color: #2c3e50;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
